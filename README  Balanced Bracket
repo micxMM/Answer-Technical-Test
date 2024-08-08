@@ -1,0 +1,7 @@
+My logic here is to number each bracket, so that if the bracket doesn't meet the same number, there will be an error
+related to this, I also use modulus to store data
+for example
+data now there are 321322
+This means that the ones that have to be closed first are 2
+with a modulus of 10 I will get 2
+then I check the input, 2 means ] is it correct, if it is correct continue, if it is wrong immediately mark it as wrong so it is definitely no because counting here I make K mandatory 0 for yess
