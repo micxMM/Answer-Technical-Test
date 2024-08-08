@@ -1,0 +1,26 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char input[100];
+    int copy=0;
+    int count=1;
+    scanf("%s",&input);
+    for(int i=0;i<strlen(input);i++){
+        if(input[i]==input[i+1])count++;
+       else {
+           int data;
+           scanf("%d",&data);
+           int cek=(input[i]-96)*count;
+           //printf("%d",cek);
+           count=1;
+           if(data==cek) 
+               printf("Yes");
+               else
+               printf("No");
+           }
+       }
+    
+     
+    return 0;
+}
